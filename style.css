@@ -1,0 +1,287 @@
+* {
+  font-family: 'IM Fell English SC', serif;
+  color:rgb(200, 119, 119);
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color:  rgb(254, 252, 246);
+  width:100%;
+}
+
+svg{
+fill:rgb(200, 119, 119);
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+/* NAVBAR CSS */
+nav{
+  grid-area: n;
+  display:grid;
+  background-color: rgb(254, 254, 246);
+  grid-template-columns: repeat(5, 1fr);
+  font-family: 'IM Fell English SC', serif;
+  font-size: 20pt;
+  font-weight:400;
+  font-style: bold;
+  margin:auto;
+  width:100%;
+}
+
+nav a{
+  font-family: 'IM Fell English SC', serif;
+  font-style: bold;
+  font-size: 1em;
+  color:rgb(200, 119, 119);
+  position:relative;
+  top:80px;
+  margin: 0 auto;
+  text-decoration:none; 
+
+}
+  /* HEADER CSS */
+.header {
+    position: relative;
+    background-image: url(/images/geometric-decoration-5836.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+
+.welcome{
+    margin-top: 25vh;
+    text-align: center;
+    font-weight: 500;
+    font-size:3em;
+    color: rgb(254, 252, 246)}
+
+#changingword {
+    color:rgb(122, 66, 66);
+      } 
+
+/* IMAGE GALLERY CSS */
+.image-gallery {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 200px;
+    grid-template-areas:
+    ". a b c ."
+    ". d e f ."
+    ;
+}
+
+.box-styling {
+    height: 350px;
+    background-color: rgb(110, 110, 110);
+}
+
+.box1 {
+    grid-area: a;
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+.box4 {
+    grid-area: d;
+}
+
+.box5 {
+    grid-area: e;
+}
+
+.box6 {
+    grid-area: f;
+}
+
+.bigText {
+    font-size: 2em;
+    padding-right: .5ch;
+}
+
+
+/* ABOUT ME CSS*/
+.aboutMeText {
+  font-size: 3em;
+  padding-right: .5ch;
+  color:rgb(122, 66, 66);
+}
+.aboutMeParagraph {
+  font-size: 1.5em;
+  padding-right: .5ch;
+  color:rgb(122, 66, 66);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-me {
+    height: 100vh !important;
+    background-color: #ebb6b6 !important;
+    padding: 20vh 50px 0 50px;
+    column-count: 2;
+}
+
+/* CONTACT CSS */
+.contact {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 25vh !important;
+    padding-bottom: 50vh;
+    background-color: burlywood !important;
+    grid-template-columns: 3fr minmax(2fr, 1fr) minmax(2fr, 1fr) 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". title title ."
+    ". logo wrapper ."
+    ;
+}
+
+.contact-title {
+    font-size: 2em;
+    grid-area: title;
+    padding-bottom: 50px;
+}
+
+.logo-svg {
+    width: 400px;
+    grid-area: logo;
+}
+
+.contact-wrapper {
+    grid-area: wrapper;
+}
+
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+  }
+  footer p{
+    font-size:2em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  footer svg {
+    width:20%;
+  }
+  footer p{
+    font-size: 1em;
+  }
+
+
+
+  /* MEDIA QUERY FOR SMALL SCREENS */
+ @media (max-width:1100px){
+    .image-gallery {
+        margin-bottom: 800px;
+        grid-template-columns: 1fr minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+        grid-template-areas:
+        ". a b ."
+        ". c d ."
+        ". e f ."
+        ;
+    }
+ }
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media screen and (max-width: 1300px){
+nav{
+    grid-area: n;
+    display:grid;
+    background-color: rgb(#faf2e7);
+    grid-template-columns: repeat(5, 1fr);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight:400;
+    font-style: bold;
+    margin-top: -0px;
+    width:100%;
+    text-align: center;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+}
+    .image-gallery {
+        padding-bottom: 3%;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        grid-template-areas:
+        ".a."
+        ".b."
+        ".c."
+        ".d."
+        ".e."
+        ".f."
+        ;
+    }
+
+    .aboutMeText {
+      font-size: 28pt;
+      font-weight: 500;
+      padding:auto;
+      margin: auto;
+      text-align: left;
+      columns: 1;
+    }
+
+    .aboutMeParagraph {
+      font-size: 14pt;
+      padding:auto;
+      margin: auto;
+      text-align: left;
+      columns: 1;
+    }
+
+    .contact {
+        padding-bottom: 200%;
+        grid-template-columns: 3fr minmax(2fr, 1fr) 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ". title ."
+        ". logo ."
+        ". wrapper ."
+        ;
+    }
+    
+ }
+
+
+

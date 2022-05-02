@@ -1,0 +1,49 @@
+nav{
+    grid-area: n;
+    display:grid;
+    background-color: rgb(254, 252, 246);
+    grid-template-columns: repeat(5, 1fr);
+    font-family: 'IM Fell English SC', serif;
+    font-size: 20pt;
+    font-weight:400;
+    font-style: bold;
+    margin:auto;
+    width:70%;
+}
+
+nav a{
+    font-family: 'IM Fell English SC', serif;
+    font-style: bold;
+    font-size: 1em;
+    color:rgb(200, 119, 119);
+    position:relative;
+    top:80px;
+    margin: 0 auto;
+    text-decoration:none; 
+
+}
+nav svg{
+    fill:rgb(200, 119, 119);
+    display:inline;
+    transform-origin: 0px 0px;
+    transform:scale(.8);
+    font-family: 'IM Fell English SC', serif;
+    
+}
+@media screen and (max-width: 1300px){
+nav{
+    grid-area: n;
+    display:grid;
+    background-color: rgb(#faf2e7);
+    grid-template-columns: repeat(5, 1fr);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight:400;
+    font-style: bold;
+    margin-top: -0px;
+    width:100%;
+    text-align: center;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+}
+}
